@@ -24,7 +24,6 @@
   src: url(Fonts/Caveat/static/Caveat-Bold.ttf);
 }
 body {
-  font-family: "Nunito_Sans";
   margin: 0;
   padding: 0;
   background-image: url(Img/bg.jpg);
@@ -35,30 +34,19 @@ body {
 header {
   font-family: "Caveat", sans-serif;
   color: #ffffff;
-  background: linear-gradient(#233723, #9fb89b);
+  background: linear-gradient(to right, #45322e, #675044);
   text-align: center;
   padding: 1em 0;
-  margin-top: 0 0 0 0;
   position: initial;
 }
-header .social-icons {
-  display: flex;
-  justify-content: center;
-  margin-right: 30px;
+.web-title {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
 }
-header .social-icons a {
-  margin: 0 10px;
-}
-header .social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-}
-header .social-icons a :hover img {
-  transform: scale(1.2);
-}
+
 nav {
-  background-color: #547450;
+  background-color: #2b1f17;
   margin: 0;
   text-align: left;
   text-decoration: none;
@@ -69,11 +57,11 @@ nav a {
   margin-left: 20px;
 }
 nav a:hover {
-  background-color: #64975f;
+  background-color: #675044;
   color: #ffffff;
   margin: 0 1em;
   display: inline-block;
-  border-color: #64975f;
+  border-color: #2b1f17;
   border-style: hidden;
   border: width 10px;
   border-radius: 5px;
@@ -86,6 +74,7 @@ nav a:hover {
   text-decoration: none;
   border-radius: 3px;
 }
+
 div {
   padding: 0em;
   font-size: 15px;
@@ -102,8 +91,9 @@ div {
   color: #000000;
   font-size: 15px;
   margin-left: 2rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   margin-right: 6rem;
+  text-align: justify;
 }
 .portfolio {
   margin-bottom: 2em;
@@ -136,10 +126,11 @@ div {
 .block-img .image {
   width: 15em;
   max-width: 100%;
-  border: 5px solid rgba(100, 151, 95, 0.365);
-  box-shadow: 2px 2px 4px rgba(100, 151, 95, 0.365);
+  border: 5px solid rgba(69, 50, 46, 0.365);
+  box-shadow: 2px 2px 4px rgba(69, 50, 46, 0.365);
   border-radius: 3px;
 }
+
 .contact {
   margin-bottom: 2em;
   font-family: "Nunito_Sans", sans-serif;
@@ -167,13 +158,28 @@ div {
 }
 
 .footer {
-  background-color: rgba(51, 51, 51, 0.8);
   text-align: center;
-  background-color: #547450;
+  background-color: #45322e;
   font-family: "Nunito_Sans", sans-serif;
   font-size: 10px;
   color: #fff;
   padding: 1em 1em;
   margin: 0;
   text-decoration: none;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+footer .social-icons a {
+  margin: 0 10px;
+}
+footer .social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+footer .social-icons a :hover img {
+  transform: scale(1.2);
 }

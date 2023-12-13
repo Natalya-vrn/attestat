@@ -24,48 +24,56 @@
   src: url(Fonts/Caveat/static/Caveat-Bold.ttf);
 }
 body {
-  font-family: "Nunito_Sans";
   margin: 0;
   padding: 0;
   background-image: url(Img/bg.jpg);
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  
 }
-
 header {
   font-family: "Caveat", sans-serif;
-  background: linear-gradient(rgb(35, 55, 35), rgb(159, 184, 155));
-  color: #fff;
+  color: #ffffff;
+  background: linear-gradient(to right, #45322e, #675044);
   text-align: center;
   padding: 1em 0;
-  margin-top: 0 0 0 0;
   position: initial;
 }
-header .social-icons {
-  display: flex;
-  justify-content: center;
-  margin-right: 30px;
-}
-header .social-icons a {
-  margin: 0 10px;
-}
-header .social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-}
-header .social-icons a :hover img {
-  transform: scale(1.2);
+
+.web-title {
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
 }
 
 nav {
-  background-color: rgb(84, 116, 80);
-  padding: 1em 1em;
+  background-color: #2b1f17;
   margin: 0;
-  text-align:left; 
+  text-align: left;
   text-decoration: none;
+}
+nav a {
+  font-family: "Nunito_Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+}
+nav a:hover {
+  background-color: #675044;
+  color: #ffffff;
+  margin: 0 1em;
+  display: inline-block;
+  border-color: #2b1f17;
+  border-style: hidden;
+  border: width 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 .portfolio {
@@ -116,7 +124,7 @@ textarea {
 }
 
 button {
-  background-color: #64975f;
+  background-color: #675044;
   font-family: "Nunito_Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -128,17 +136,33 @@ button {
 }
 
 button:hover {
-  background-color: #64975f;
+  background-color: #675044;
 }
 
 .footer {
-  background-color: rgba(51, 51, 51, 0.8);
   text-align: center;
-  background-color: #547450;
+  background-color: #45322e;
   font-family: "Nunito_Sans", sans-serif;
   font-size: 10px;
   color: #fff;
   padding: 1em 1em;
   margin-bottom: 0;
   text-decoration: none;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+footer .social-icons a {
+  margin: 0 10px;
+}
+footer .social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+footer .social-icons a :hover img {
+  transform: scale(1.2);
 }
